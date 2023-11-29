@@ -12,12 +12,9 @@
                 <h1 class="text-over-depoimentos">depoimentos</h1>
             </div>
         </div>
-
-        <div class="conteiner-depoimentos-pessoas">
-            <img src="" alt="">
-            <h1 class="nome"></h1>
-            <p class="text-depoimentos"></p>
-        </div>
+        {% for dp in depoimentos %}
+            {% include "partials/depoimentos.html" %}
+        {% endfor %}
     </div>
 
 
