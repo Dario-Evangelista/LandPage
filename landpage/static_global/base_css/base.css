@@ -10,7 +10,10 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    background: #081c2c;
+    background-size: 100vw 100vh; 
+    font-family: 'Arial', sans-serif;
+    color: #fff;
 }
 
 a {
