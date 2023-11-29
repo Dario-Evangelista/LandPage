@@ -59,6 +59,7 @@ TEMPLATES = [
             BASE_DIR / "TEMPLATES_GLOBAL",
             BASE_DIR / "partial",
             BASE_DIR / "img",
+            BASE_DIR / "__pycache__",
         ],
         'APP_DIRS': True,
         'OPTIONS': {
