@@ -5,5 +5,5 @@ from .ultis.factory import depoimentos
 
 def home (request):
     return render(request, 'pages/home.html', context= {
-        'PAGEHOMES': [depoimentos() for _ in range(1)]
+        'PAGEHOMES': [depoimentos() for _ in range(10)]
     })

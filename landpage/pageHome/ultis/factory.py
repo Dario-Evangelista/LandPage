@@ -13,14 +13,13 @@ fake = Faker('pt_BR')
 
 def depoimentos():
     return {
-        'title': fake.sentence(nb_words=6),
-        'description': fake.sentence(nb_words=12),
+        'description': fake.sentence(nb_words=20),
         'author': {
             'first_name': fake.first_name(),
             'last_name': fake.last_name(),
         },
-        'img': {
-            'url': 'https://loremflickr.com/%s/%s/male' % rand_ratio(),
+        'cover': {
+            'url': 'https://loremflickr.com/%s/%s/paris,girl/all' % rand_ratio(),
         }
     }
 

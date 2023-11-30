@@ -1,5 +1,7 @@
+{% load static %}
+
 <div class="conteiner-depoimentos-pessoas"> 
-    <img src="{{ dp.img}}" alt="">
-    <h1 class="nome"> nome</h1>
-    <p class="text-depoimentos"></p>
+    <img src="{{dp.cover.url}}" alt="pessoa">
+    <h1 class="nome"> {{dp.author.first_name}}</h1>
+    <p class="text-depoimentos">{{ dp.description}}</p>
 </div>

@@ -7,7 +7,7 @@
 .main-container{
     max-width: 144rem;
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
     align-items: flex-end;
@@ -95,7 +95,7 @@
     display: flex;
     position: relative;
     height: 75rem;
-    overflow: hidden;
+
     justify-content: space-between;
 }
 
@@ -150,6 +150,7 @@
 
 .vector1 {
     position: absolute;
+    width: 200rem;
     bottom: 0; 
     left: 0; 
 }
@@ -234,18 +235,21 @@
 
 .depoimentos-conteiner {
     width: 100%;
-    height: 400px;
+    height: auto;
     background: #081c2c;
+    display: flex;
+    flex-direction: column;
 }
 
 .depoimentos-base {
+    display: inline-block;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    margin: auto;
+    margin: 5rem auto;
     max-width: 144rem;
+    width: 100%;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    border-bottom: #3498DB 1px solid;
 }
 
 .text-over-depoimentos {
@@ -254,4 +258,97 @@
     font-size: 10rem;
     line-height: normal;
     text-transform: uppercase;
+}
+
+.main-content-container {
+    width: 144rem;
+}
+
+.main-content {
+    width: 144rem;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 5rem;
+}
+
+
+.conteiner-depoimentos-pessoas {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 40rem;
+    background: #ffffff;
+    margin: auto;
+    border-radius: 0rem 8rem;
+    border-top: 9px solid #3498DB;
+    border-bottom: 9px solid #3498DB;
+    background: #061420;
+    box-shadow: -4px 12px 28px 0px rgba(245, 245, 245, 0.10), -15px 48px 50px 0px rgba(245, 245, 245, 0.09), -34px 108px 68px 0px rgba(245, 245, 245, 0.05), -60px 192px 81px 0px rgba(245, 245, 245, 0.01), -94px 301px 88px 0px rgba(245, 245, 245, 0.00);
+}
+
+.conteiner-depoimentos-pessoas img {
+    max-width: 15rem;
+    max-height: 15rem;
+    margin: 0 auto;
+    border-radius: 100px;
+    padding: 2rem 0;
+    box-shadow: -4px 12px 28px 0px rgba(245, 245, 245, 0.10), -15px 48px 50px 0px rgba(245, 245, 245, 0.09), -34px 108px 68px 0px rgba(245, 245, 245, 0.05), -60px 192px 81px 0px rgba(245, 245, 245, 0.01), -94px 301px 88px 0px rgba(245, 245, 245, 0.00);
+}
+
+.conteiner-depoimentos-pessoas h1 {
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.text-depoimentos {
+    margin: 0 auto;
+    width: 35rem;
+    text-align: justify;
+    font-size: 2rem;
+}
+
+.main-footer {
+    background-color: #081c2c;
+    color: #e74c3c;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 144rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo-text {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+
+.footer-links a,
+.footer-social a {
+    text-decoration: none;
+    color: #e74c3c;
+    margin-right: 20px;
+    font-size: 2rem;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
 }

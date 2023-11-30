@@ -1,0 +1,10 @@
+<div class="depoimentos-conteiner">
+    <div class="depoimentos-base">
+        <h1 class="text-over-depoimentos">depoimentos</h1>
+    </div>
+    <div class="main-content">
+        {% for dp in PAGEHOMES %}
+            {% include "partials/depoimentos.html" %}
+        {% endfor %}
+    </div>
+</div>
